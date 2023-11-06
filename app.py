@@ -9,7 +9,7 @@ scope = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/au
          "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
 
 # Load credentials from a JSON key file
-credentials = ServiceAccountCredentials.from_json_keyfile_name(r'C:\Users\123\Desktop\vs_file\creds.json', scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name(r'creds.json', scope)
 
 # Authorize the client using the credentials
 client = gspread.authorize(credentials)
